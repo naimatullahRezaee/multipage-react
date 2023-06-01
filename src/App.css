@@ -18,3 +18,8 @@ nav a {
   color: #333;
   padding: 4px 10px;
 }
+nav a.active {
+  color: #fff;
+  background: #2d2727;
+  text-decoration: none;
+}
