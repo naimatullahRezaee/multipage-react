@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "welcome to the site",
+      "author": "Ali",
+      "body": "lorem"
+    },
+    {
+      "id": "2",
+      "title": "5 react tips for beginners",
+      "author": "Ahmad",
+      "body": "lorem"
+    },
+    {
+      "id": "3",
+      "title": "vsCode is the best package",
+      "author": "Maryam",
+      "body": "lorem"
+    }
+  ]
+}
