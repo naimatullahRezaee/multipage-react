@@ -2,10 +2,10 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
   NavLink,
-  Router,
+  Navigate,
 } from "react-router-dom";
+import { useState } from "react";
 
 import "./App.css";
 import Home from "./pages/Home";
@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import Articles from "./pages/Articles";
 
 function App() {
+  const [loginIn] = useState(true);
   return (
     <div className="App">
       <BrowserRouter>
@@ -28,6 +29,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Articles/:id" element={<Articles />} />
+          <Route
+            path="/ali"
+            element={loginIn ? <p>Hello Ali</p> : <Navigate to="/" />}
+          />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
     </div>
