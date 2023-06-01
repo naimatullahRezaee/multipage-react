@@ -1,9 +1,17 @@
-import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  NavLink,
+  Router,
+} from "react-router-dom";
 
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Articles from "./pages/Articles";
 
 function App() {
   return (
@@ -13,12 +21,13 @@ function App() {
           <h1>My Articles</h1>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="contact">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/Articles/:id" element={<Articles />} />
         </Routes>
       </BrowserRouter>
     </div>
