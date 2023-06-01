@@ -1,3 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+import OpenCode from "./OpenCode";
 import React from "react";
 
 export default function About() {
@@ -10,6 +12,9 @@ export default function About() {
         asperiores, exercitationem consequatur cupiditate obcaecati aliquam
         sunt?
       </p>
+      <Routes>
+        <Route path="opencode" element={<OpenCode />} />
+      </Routes>
     </div>
   );
 }
